@@ -1,0 +1,42 @@
+.list {
+    margin-top: 10px;
+}
+
+.list:first-child {
+    margin-top: 0;
+}
+
+.delete__button {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.inputField {
+    display: block;
+    margin-top: 10px;
+}
+
+.delete_modal {
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: orange;
+    padding: 10px;
+    z-index: 100;
+    position: fixed;
+}
+
+.modal_yes_button {
+    margin-right: 10px;
+}
+
+.modal_no_button {
+    margin-top: 0;
+}
+
+.modal_font_color {
+    color: black;
+}
