@@ -2,7 +2,7 @@
 import './App.css'
 import styles from "./style.module.css"
 
-/* todoList */
+
 function App() {
 
 
@@ -35,7 +35,7 @@ function App() {
         />
 
         <ul>
-          {filterTodo.map((todo) => {
+          {showTodoList.map((todo) => {
             return (
               <li className={styles.list} key={todo.id}>
                 <span>{todo.title}</span>
@@ -61,14 +61,14 @@ function App() {
             {/* クリック時に削除処理を実行 */}
             <button
               className={`${styles.modal_yes_button} ${styles.modal_font_color}`}
-              onClick={() => handleDeleteTodo(selectTodo)}
+              onClick={() => handleDeleteTodo}
             >
               はい
             </button>
             {/* クリック時にmodalを非アクティブにする */}
             <button
               className={`${styles.modal_no_button} ${styles.modal_font_color}`}
-              onClick={() => setIsModalOpen(false)}
+              onClick={() => handleSetIsModalOpen}
             >
               いいえ
             </button>

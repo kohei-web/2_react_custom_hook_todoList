@@ -6,4 +6,7 @@ import { TodoTemplate } from "../templates/TodoTemplates";
  * @constructor
  */
 
-export const TodoPage = () => <TodoTemplate />
+
+const TodoPage = () => <TodoTemplate />
+
+export default TodoPage;

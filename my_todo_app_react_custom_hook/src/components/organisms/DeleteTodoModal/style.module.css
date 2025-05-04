@@ -1,22 +1,4 @@
-.list {
-    margin-top: 10px;
-}
-
-.list:first-child {
-    margin-top: 0;
-}
-
-.delete__button {
-    font-size: 15px;
-    margin-left: 10px;
-}
-
-.inputField {
-    display: block;
-    margin-top: 10px;
-}
-
-.delete_modal {
+.deleteModal {
     width: 500px;
     height: 400px;
     margin: 0 auto;

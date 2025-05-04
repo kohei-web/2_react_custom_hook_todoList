@@ -14,3 +14,15 @@ data/  jsxの記述を書いてないものは.jsファイル作成
 hooks/  jsxの記述を書いてないものは.jsファイル作成
 templates organismsの集合体
 pages page自体を呼び出して表示させる
+
+作業タスク整理
+共通コンポーネントとしてinputFormの作成
+
+inputFormを親として検索テキスト入力欄とTodoList入力欄のコンポーネントを作成
+大きめのコンポーネントとしてTodoList追加とmodalのコンポーネントを作成
+
+ここまで済
+
+hooksのuseTodoで返すのに必要な値を策定していく
+
+TodoTemplateを作成する

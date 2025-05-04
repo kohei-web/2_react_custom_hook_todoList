@@ -1,32 +1,33 @@
 /**
- * AddTodo
+ * SearchTodo
  *
  * @package components
  *
  */
 
+
 import InputForm from "../../atoms/InputForm";
 
 /**
  *
- * AddTodo
+ *
  * @param {*} props
  * @return {*}
  */
 
-const AddTodo = (props) => {
-    const { inputValue, changeText, handleKeyUp } = props
-    return (
+const SearchTodo = (props) => {
+    const { inputValue, changeText } = props;
+
+    return(
         <>
-            <h2 className={styles.addTodo}></h2>
+            <h2 className={styles.searchTodo}>{"todo検索"}</h2>
             <InputForm
                 inputValue={inputValue}
-                placeholder={"todo追加"}
+                placeholder={"todoを検索"}
                 changeText={changeText}
-                handleKeyUp={handleKeyUp}
             />
         </>
     )
 };
 
-export default AddTodo;
+export default SearchTodo;
