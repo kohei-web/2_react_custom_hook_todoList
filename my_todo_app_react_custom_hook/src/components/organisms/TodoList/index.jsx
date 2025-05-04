@@ -16,19 +16,21 @@ import styles from "./style.module.css";
  */
 
 const TodoList = (props) => {
-    const { todoList, handleOnClick } = props;
+    const { showTodoList, modalOpen } = props;
 
     return (
         <ul>
-            {todoList.map((todo) => {
-                <li className={styles.list} key={todo.id}>
-                    <span>{todo.title}</span>
-                    <ClickButton
-                        buttonStyles={styles.deleteButton}
-                        onClick={handleOnClick}
-                        buttonText={"削除ボタン"}
-                    />
-                </li>
+            {showTodoList.map((todo) => {
+                return (
+                    <li className={styles.list} key={todo.id}>
+                        <span>{todo.title}</span>
+                        <ClickButton
+                            buttonStyles={styles.deleteButton}
+                            handleOnClick={() => modalOpen(todo)}
+                            buttonText={"削除ボタン"}
+                        />
+                    </li>
+                )
             })}
         </ul>
     )

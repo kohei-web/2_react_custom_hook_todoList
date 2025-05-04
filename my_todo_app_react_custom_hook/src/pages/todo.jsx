@@ -1,4 +1,4 @@
-import { TodoTemplate } from "../templates/TodoTemplates";
+import TodoTemplate from "../templates/TodoTemplates";
 
 /**
  * TodoPage

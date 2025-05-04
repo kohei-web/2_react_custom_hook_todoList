@@ -6,6 +6,7 @@
  */
 
 import InputForm from "../../atoms/InputForm";
+import styles from "../../../commons/style.module.css";
 
 /**
  *
@@ -15,15 +16,15 @@ import InputForm from "../../atoms/InputForm";
  */
 
 const AddTodo = (props) => {
-    const { inputValue, changeText, handleKeyUp } = props
+    const { originalText, handleChangeText, handleAddTodo } = props
     return (
         <>
-            <h2 className={styles.addTodo}></h2>
+            <h2 className={styles.commonsTodo}>{"todo追加"}</h2>
             <InputForm
-                inputValue={inputValue}
+                inputValue={originalText}
                 placeholder={"todo追加"}
-                changeText={changeText}
-                handleKeyUp={handleKeyUp}
+                changeText={handleChangeText}
+                handleKeyUp={handleAddTodo}
             />
         </>
     )

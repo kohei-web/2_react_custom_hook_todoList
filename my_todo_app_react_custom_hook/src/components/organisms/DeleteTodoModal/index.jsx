@@ -16,7 +16,7 @@ import styles from "./style.module.css";
  */
 
 const DeleteTodoModal = (props) => {
-    const { isModalOpen, handleOnClick, handleSetIsModalOpen } = props;
+    const { isModalOpen, handleTodoDelete, handleSetIsModal } = props;
 
     return (
         <>
@@ -33,14 +33,14 @@ const DeleteTodoModal = (props) => {
                         buttonStyle={
                             `${styles.modal_yes_button} ${styles.modal_font_color}`
                         }
-                        handleOnClick={handleOnClick}
+                        handleOnClick={handleTodoDelete}
                         buttonText={"はい"}
                     />
                     <ClickButton
                         buttonStyle={
                             `${styles.modal_no_button} ${styles.modal_font_color}`
                         }
-                        handleOnClick={handleSetIsModalOpen}
+                        handleOnClick={handleSetIsModal}
                         buttonText={"いいえ"}
                     />
                 </div>

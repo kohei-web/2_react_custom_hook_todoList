@@ -26,3 +26,6 @@ inputFormを親として検索テキスト入力欄とTodoList入力欄のコン
 hooksのuseTodoで返すのに必要な値を策定していく
 
 TodoTemplateを作成する
+
+todoListの動作確認を行う
+→動くのは確認済み
